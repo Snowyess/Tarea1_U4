@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecanismos de Seguridad en Formularios</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+  <style>
+    .error { color: red; }
+    /* ESTILO PARA EL ENLACE DE REGRESO */
+    .regreso a {
+            display: block; /* HACER EL ENLACE BLOQUE */
+            width: fit-content; /* ANCHO AUTOMÁTICO PARA EL ENLACE */
+            margin: 30px auto; /* CENTRAR EL ENLACE CON MÁRGENES */
+            text-align: center; /* CENTRAR EL TEXTO EN EL ENLACE */
+            font-size: 18px; /* TAMAÑO DE LETRA DEL ENLACE */
+            color: #ffffff; /* TEXTO BLANCO */
+            background-color: #f4a2e2; /* FONDO ROSA CLARO */
+            padding: 10px 20px; /* RELLENO EN EL ENLACE */
+            text-decoration: none; /* QUITAR SUBRAYADO DEL ENLACE */
+            border-radius: 5px; /* RADIAR ESQUINAS DEL ENLACE */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DEL ENLACE DE REGRESO */
+    .regreso a:hover {
+            background-color: #f860d7; /* CAMBIAR EL FONDO A ROSA MÁS FUERTE AL HACER HOVER */
+        }
+
+        /* ESTILO PARA LA BIBLIOGRAFÍA */
+    .bibliografia {
+            max-width: 800px; /* ANCHO MÁXIMO DE LA BIBLIOGRAFÍA */
+            margin: 40px auto; /* CENTRAR LA BIBLIOGRAFÍA CON MÁRGENES */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            text-align: left; /* ALINEAR A LA IZQUIERDA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+        }
+
+        /* ESTILO PARA LOS ENLACES EN LA BIBLIOGRAFÍA */
+    .bibliografia a {
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN LA BIBLIOGRAFÍA */
+    .bibliografia a:hover {
+            color: #f47cda; /* CAMBIAR EL COLOR A ROSA MÁS FUERTE AL HACER HOVER */
+            text-decoration: underline; /* SUBRAYAR LOS ENLACES AL HACER HOVER */
+        }
+  </style>
+</head>
+<body>
+
+    <form id="myForm">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        <label for="email">Correo:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <label for="age">Edad:</label>
+        <input type="number" id="age" name="age" min="18" max="100" required>
+        <br><br>
+        <button type="submit">Aceptar</button>
+    </form>
+
+    <script>
+        $(document).ready(function() 
+        {
+            $("#myForm").validate({
+            rules: {
+                name: "required",
+                email: 
+                {
+                    required: true,
+                    email: true
+                },
+                age: 
+                {
+                    required: true,
+                    number: true,
+                    min: 18,
+                    max: 100
+                }
+        },
+        messages: 
+        {
+            name: "Favor de ingresar su nombre.",
+            email: "Favor de ingresar un corre valido.",
+            age: "Favor de ingresar una edad valida de 18 a 100."
+        }
+      });
+    });
+  </script>
+      <!-- ENLACE PARA VOLVER AL MENÚ PRINCIPAL -->
+      <div class="regreso">
+        <a href="Index.html">Volver al menú principal</a>
+    </div>
+
+    <!-- SECCIÓN DE BIBLIOGRAFÍA -->
+    <div class="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>Kaos. (2009, 23 noviembre). <i>Validar formularios: Jquery, Mootools, etc.</i> Noticias Diseño - Tutorial Photoshop. Disponible en: <a href="https://kaosconcept.net/validar-formularios-con-jquery/" target="_blank">https://kaosconcept.net/validar-formularios-con-jquery/</a></p>
+    </div>
+</body>
+</html>

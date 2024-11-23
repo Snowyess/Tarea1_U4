@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SE DEFINE EL JUEGO DE CARACTERES UTF-8 Y LA VISTA RESPONSIVA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SE ESTABLECE EL TÍTULO DE LA PÁGINA -->
+    <title>Prototype</title>
+
+    <style>
+        /* ESTILO GENERAL PARA EL CUERPO DE LA PÁGINA */
+        body {
+            font-family: Arial, sans-serif; /* FUENTE SANS-SERIF */
+            line-height: 1.6; /* ALTURA DE LINEA PARA MEJOR LECTURA */
+            background-color: #ffffff; /* FONDO BLANCO */
+            margin: 0; /* SIN MÁRGENES EN EL CUERPO */
+            padding: 0; /* SIN RELLENO EN EL CUERPO */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS PRINCIPALES (H1, H2) */
+        h1, h2 {
+            color: #f860d7; /* COLOR ROSA CLARO */
+            text-align: center; /* CENTRAR EL TEXTO */
+        }
+
+        /* ESTILO PARA EL ENCABEZADO PRINCIPAL (H1) */
+        h1 {
+            margin-top: 0; /* ELIMINAR MÁRGENES EN LA PARTE SUPERIOR */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS SECUNDARIOS (H2) */
+        h2 {
+            margin-top: 40px; /* ESPACIO DESDE LA PARTE SUPERIOR */
+            color: #f47cda; /* COLOR ROSA */
+        }
+
+        /* ESTILO PARA LOS PÁRRAFOS */
+        p {
+            max-width: 800px; /* ANCHO MÁXIMO PARA LOS PÁRRAFOS */
+            margin: 20px auto; /* MÁRGENES AUTOMÁTICOS Y ESPACIO SUPERIOR/INFERIOR */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-align: justify; /* JUSTIFICAR TEXTO */
+        }
+
+        /* ESTILO PARA EL ENLACE DE REGRESO */
+        .regreso a {
+            display: block; /* HACER EL ENLACE BLOQUE */
+            width: fit-content; /* ANCHO AUTOMÁTICO PARA EL ENLACE */
+            margin: 30px auto; /* CENTRAR EL ENLACE CON MÁRGENES */
+            text-align: center; /* CENTRAR EL TEXTO EN EL ENLACE */
+            font-size: 18px; /* TAMAÑO DE LETRA DEL ENLACE */
+            color: #ffffff; /* TEXTO BLANCO */
+            background-color: #f4a2e2; /* FONDO ROSA CLARO */
+            padding: 10px 20px; /* RELLENO EN EL ENLACE */
+            text-decoration: none; /* QUITAR SUBRAYADO DEL ENLACE */
+            border-radius: 5px; /* RADIAR ESQUINAS DEL ENLACE */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DEL ENLACE DE REGRESO */
+        .regreso a:hover {
+            background-color: #f860d7; /* CAMBIAR EL FONDO A ROSA MÁS FUERTE AL HACER HOVER */
+        }
+
+        /* ESTILO PARA LA BIBLIOGRAFÍA */
+        .bibliografia {
+            max-width: 800px; /* ANCHO MÁXIMO DE LA BIBLIOGRAFÍA */
+            margin: 40px auto; /* CENTRAR LA BIBLIOGRAFÍA CON MÁRGENES */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            text-align: left; /* ALINEAR A LA IZQUIERDA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+        }
+
+        /* ESTILO PARA LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a {
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a:hover {
+            color: #f47cda; /* CAMBIAR EL COLOR A ROSA MÁS FUERTE AL HACER HOVER */
+            text-decoration: underline; /* SUBRAYAR LOS ENLACES AL HACER HOVER */
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL DE LA PÁGINA -->
+    <h1>Prototype</h1>
+
+    <!-- SECCIÓN SOBRE QUÉ ES EL PROTOTYPE -->
+    <h2>¿Qué es el prototype?</h2>
+    <p>
+        Prototype es una librería de JavaScript que facilita el desarrollo de aplicaciones web al proporcionar herramientas para manipular el DOM, manejar eventos, 
+        y trabajar con AJAX de manera más sencilla. Es conocida por su capacidad para extender las funcionalidades de JavaScript y por permitir una programación 
+        más orientada a objetos. Prototype introduce un enfoque más estructurado y limpio para trabajar con JavaScript, ofreciendo métodos y funciones adicionales 
+        que simplifican tareas comunes en el desarrollo web.
+    </p>
+
+    <!-- SECCIÓN SOBRE PARA QUÉ SE USA PROTOTYPE -->
+    <h2>Para qué se usa</h2>
+    <p>
+        Prototype se utiliza para mejorar y simplificar el código JavaScript, proporcionando una serie de funciones que facilitan la manipulación de elementos HTML, 
+        la creación de efectos visuales, y el envío de solicitudes AJAX. También permite una mayor eficiencia al trabajar con objetos y arrays, añadiendo métodos 
+        adicionales que no están disponibles en JavaScript puro. Prototype ayuda a reducir el código repetitivo y a hacer más accesible el desarrollo de aplicaciones 
+        interactivas.
+    </p>
+
+    <!-- SECCIÓN SOBRE CUÁNDO SE USA PROTOTYPE -->
+    <h2>Cuándo se usa</h2>
+    <p>
+        Prototype se usa cuando se necesita una librería que facilite el desarrollo de aplicaciones web mediante JavaScript, especialmente en proyectos que requieren 
+        manipulación dinámica de contenido y eventos. Aunque su popularidad ha disminuido con la aparición de otras librerías como jQuery, Prototype aún puede ser útil 
+        en proyectos más antiguos o en aquellos donde se desee una implementación más directa y simple de ciertos métodos y funcionalidades. Se utiliza principalmente 
+        en sitios web que requieren interacciones dinámicas o complejas sin la necesidad de frameworks más pesados.
+    </p>
+
+    <!-- ENLACE PARA VOLVER AL MENÚ PRINCIPAL -->
+    <div class="regreso">
+        <a href="Index.html">Volver al menú principal</a>
+    </div>
+
+    <!-- SECCIÓN DE BIBLIOGRAFÍA -->
+    <div class="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>MDN. (2024, 28 julio). <i>Prototipos de objetos - Aprende desarrollo web </i> MDN Web Docs. Disponible en: <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Object_prototypes" target="_blank"> https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/Object_prototypes</a></p>
+        <p>MDN. (2023, 13 noviembre). <i>Prototype-based programming - Glosario de MDN Web Docs: Definiciones de términos relacionados con la Web </i> MDN Web Docs. Disponible en: <a href=" https://developer.mozilla.org/es/docs/Glossary/Prototype-based_programming" target="_blank">  https://developer.mozilla.org/es/docs/Glossary/Prototype-based_programming</a></p>
+    </div>
+</body>
+</html>

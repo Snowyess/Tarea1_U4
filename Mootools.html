@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SE DEFINE EL JUEGO DE CARACTERES UTF-8 Y LA VISTA RESPONSIVA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SE ESTABLECE EL TÍTULO DE LA PÁGINA -->
+    <title>Mootools</title>
+
+    <style>
+        /* ESTILO GENERAL PARA EL CUERPO DE LA PÁGINA */
+        body {
+            font-family: Arial, sans-serif; /* FUENTE SANS-SERIF */
+            line-height: 1.6; /* ALTURA DE LINEA PARA MEJOR LECTURA */
+            background-color: #ffffff; /* FONDO BLANCO */
+            margin: 0; /* SIN MÁRGENES EN EL CUERPO */
+            padding: 0; /* SIN RELLENO EN EL CUERPO */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS PRINCIPALES (H1, H2) */
+        h1, h2 {
+            color: #f860d7; /* COLOR ROSA CLARO */
+            text-align: center; /* CENTRAR EL TEXTO */
+        }
+
+        /* ESTILO PARA EL ENCABEZADO PRINCIPAL (H1) */
+        h1 {
+            margin-top: 0; /* ELIMINAR MÁRGENES EN LA PARTE SUPERIOR */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS SECUNDARIOS (H2) */
+        h2 {
+            margin-top: 40px; /* ESPACIO DESDE LA PARTE SUPERIOR */
+            color: #f47cda; /* COLOR ROSA */
+        }
+
+        /* ESTILO PARA LOS PÁRRAFOS */
+        p {
+            max-width: 800px; /* ANCHO MÁXIMO PARA LOS PÁRRAFOS */
+            margin: 20px auto; /* MÁRGENES AUTOMÁTICOS Y ESPACIO SUPERIOR/INFERIOR */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-align: justify; /* JUSTIFICAR TEXTO */
+        }
+
+        /* ESTILO PARA EL ENLACE DE REGRESO */
+        .regreso a {
+            display: block; /* HACER EL ENLACE BLOQUE */
+            width: fit-content; /* ANCHO AUTOMÁTICO PARA EL ENLACE */
+            margin: 30px auto; /* CENTRAR EL ENLACE CON MÁRGENES */
+            text-align: center; /* CENTRAR EL TEXTO EN EL ENLACE */
+            font-size: 18px; /* TAMAÑO DE LETRA DEL ENLACE */
+            color: #ffffff; /* TEXTO BLANCO */
+            background-color: #f4a2e2; /* FONDO ROSA CLARO */
+            padding: 10px 20px; /* RELLENO EN EL ENLACE */
+            text-decoration: none; /* QUITAR SUBRAYADO DEL ENLACE */
+            border-radius: 5px; /* RADIAR ESQUINAS DEL ENLACE */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DEL ENLACE DE REGRESO */
+        .regreso a:hover {
+            background-color: #f860d7; /* CAMBIAR EL FONDO A ROSA MÁS FUERTE AL HACER HOVER */
+        }
+
+        /* ESTILO PARA LA BIBLIOGRAFÍA */
+        .bibliografia {
+            max-width: 800px; /* ANCHO MÁXIMO DE LA BIBLIOGRAFÍA */
+            margin: 40px auto; /* CENTRAR LA BIBLIOGRAFÍA CON MÁRGENES */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            text-align: left; /* ALINEAR A LA IZQUIERDA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+        }
+
+        /* ESTILO PARA LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a {
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a:hover {
+            color: #f47cda; /* CAMBIAR EL COLOR A ROSA MÁS FUERTE AL HACER HOVER */
+            text-decoration: underline; /* SUBRAYAR LOS ENLACES AL HACER HOVER */
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL DE LA PÁGINA -->
+    <h1>Mootools</h1>
+
+    <!-- SECCIÓN SOBRE QUÉ SON LOS MOOTOOLS -->
+    <h2>¿Qué son los Mootools?</h2>
+    <p>
+        MooTools es una librería de JavaScript de código abierto que proporciona una serie de herramientas para facilitar el desarrollo web. Fue diseñada para 
+        simplificar tareas complejas como la manipulación del DOM, la creación de animaciones, la gestión de eventos y el manejo de AJAX. MooTools se caracteriza 
+        por su modularidad, lo que permite a los desarrolladores incluir solo las funcionalidades necesarias para su proyecto, reduciendo el tamaño del código.
+    </p>
+
+    <!-- SECCIÓN SOBRE PARA QUÉ SE USAN LOS MOOTOOLS -->
+    <h2>Para qué se usan</h2>
+    <p>
+        MooTools se usa principalmente para mejorar la interacción y la funcionalidad de las aplicaciones web. Proporciona una sintaxis más sencilla y eficiente 
+        para realizar tareas comunes en JavaScript, como la modificación de elementos HTML, la creación de efectos visuales, el manejo de eventos de usuario y la 
+        implementación de peticiones AJAX. También facilita la creación de interfaces de usuario dinámicas e interactivas sin necesidad de escribir un código extenso.
+    </p>
+
+    <!-- SECCIÓN SOBRE CUÁNDO SE USAN LOS MOOTOOLS -->
+    <h2>Cuándo se usan</h2>
+    <p>
+        MooTools se usa cuando se necesita una librería ligera y flexible para realizar tareas avanzadas en JavaScript, especialmente en proyectos donde la simplicidad 
+        y la modularidad son clave. Aunque su popularidad ha disminuido con la llegada de otras librerías y frameworks como jQuery o las tecnologías nativas de JavaScript, 
+        sigue siendo útil en proyectos pequeños o medianos donde se busca optimizar el rendimiento y evitar dependencias pesadas. Se utiliza generalmente en situaciones 
+        donde se requieren efectos dinámicos o interacciones avanzadas sin sobrecargar el código.
+    </p>
+
+    <!-- ENLACE PARA VOLVER AL MENÚ PRINCIPAL -->
+    <div class="regreso">
+        <a href="Index.html">Volver al menú principal</a>
+    </div>
+
+    <!-- SECCIÓN DE BIBLIOGRAFÍA -->
+    <div class="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>Equipo editorial de IONOS. (2017, 5 julio). <i>MooTools: el compacto framework para JavaScript. </i> IONOS Digital Guide. Disponible en: <a href=" https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/mootools-coleccion-de-herramientas-para-javascript/" target="_blank"> https://www.ionos.mx/digitalguide/paginas-web/desarrollo-web/mootools-coleccion-de-herramientas-para-javascript/</a></p>
+    </div>
+</body>
+</html>

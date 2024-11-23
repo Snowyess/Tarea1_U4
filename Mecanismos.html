@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SE DEFINE EL JUEGO DE CARACTERES UTF-8 Y LA VISTA RESPONSIVA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SE ESTABLECE EL TÍTULO DE LA PÁGINA -->
+    <title>Mecanismos de Seguridad en Formularios</title>
+
+    <style>
+        /* ESTILO GENERAL PARA EL CUERPO DE LA PÁGINA */
+        body {
+            font-family: Arial, sans-serif; /* FUENTE SANS-SERIF */
+            line-height: 1.6; /* ALTURA DE LINEA PARA MEJOR LECTURA */
+            background-color: #ffffff; /* FONDO BLANCO */
+            margin: 0; /* SIN MÁRGENES EN EL CUERPO */
+            padding: 0; /* SIN RELLENO EN EL CUERPO */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS PRINCIPALES (H1, H2) */
+        h1, h2 {
+            color: #f860d7; /* COLOR ROSA CLARO */
+            text-align: center; /* CENTRAR EL TEXTO */
+        }
+
+        /* ESTILO PARA EL ENCABEZADO PRINCIPAL (H1) */
+        h1 {
+            margin-top: 0; /* ELIMINAR MÁRGENES EN LA PARTE SUPERIOR */
+        }
+
+        /* ESTILO PARA LOS ENCABEZADOS SECUNDARIOS (H2) */
+        h2 {
+            margin-top: 40px; /* ESPACIO DESDE LA PARTE SUPERIOR */
+            color: #f47cda; /* COLOR ROSA */
+        }
+
+        /* ESTILO PARA LOS PÁRRAFOS */
+        p {
+            max-width: 800px; /* ANCHO MÁXIMO PARA LOS PÁRRAFOS */
+            margin: 20px auto; /* MÁRGENES AUTOMÁTICOS Y ESPACIO SUPERIOR/INFERIOR */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-align: justify; /* JUSTIFICAR TEXTO */
+        }
+
+        /* ESTILO PARA EL ENLACE DE REGRESO */
+        .regreso a {
+            display: block; /* HACER EL ENLACE BLOQUE */
+            width: fit-content; /* ANCHO AUTOMÁTICO PARA EL ENLACE */
+            margin: 30px auto; /* CENTRAR EL ENLACE CON MÁRGENES */
+            text-align: center; /* CENTRAR EL TEXTO EN EL ENLACE */
+            font-size: 18px; /* TAMAÑO DE LETRA DEL ENLACE */
+            color: #ffffff; /* TEXTO BLANCO */
+            background-color: #f4a2e2; /* FONDO ROSA CLARO */
+            padding: 10px 20px; /* RELLENO EN EL ENLACE */
+            text-decoration: none; /* QUITAR SUBRAYADO DEL ENLACE */
+            border-radius: 5px; /* RADIAR ESQUINAS DEL ENLACE */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DEL ENLACE DE REGRESO */
+        .regreso a:hover {
+            background-color: #f860d7; /* CAMBIAR EL FONDO A ROSA MÁS FUERTE AL HACER HOVER */
+        }
+
+        /* ESTILO PARA LA BIBLIOGRAFÍA */
+        .bibliografia {
+            max-width: 800px; /* ANCHO MÁXIMO DE LA BIBLIOGRAFÍA */
+            margin: 40px auto; /* CENTRAR LA BIBLIOGRAFÍA CON MÁRGENES */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            text-align: left; /* ALINEAR A LA IZQUIERDA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+        }
+
+        /* ESTILO PARA LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a {
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a:hover {
+            color: #f47cda; /* CAMBIAR EL COLOR A ROSA MÁS FUERTE AL HACER HOVER */
+            text-decoration: underline; /* SUBRAYAR LOS ENLACES AL HACER HOVER */
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO PRINCIPAL DE LA PÁGINA -->
+    <h1>Mecanismos de Seguridad en Formularios</h1>
+    
+    <!-- SECCIÓN SOBRE QUÉ SON LOS MECANISMOS DE SEGURIDAD EN FORMULARIOS -->
+    <h2>¿Qué son los Mecanismos de seguridad en formularios?</h2>
+    <p>
+        Los mecanismos de seguridad en formularios son técnicas y medidas implementadas para proteger la información que los usuarios envían a través de 
+        formularios en línea. Estos mecanismos ayudan a prevenir ataques cibernéticos como el robo de datos, el envío de información maliciosa o el acceso 
+        no autorizado a sistemas. Entre los mecanismos más comunes se incluyen la validación de datos, el cifrado de información, el uso de CAPTCHAs, la 
+        autenticación de usuarios y el uso de tokens de seguridad, entre otros.
+    </p>
+
+    <!-- SECCIÓN SOBRE PARA QUÉ SE USAN LOS MECANISMOS DE SEGURIDAD EN FORMULARIOS -->
+    <h2>Para qué se usan</h2>
+    <p>
+        Los mecanismos de seguridad en formularios se utilizan para proteger tanto a los usuarios como a los sistemas de posibles amenazas. Estos mecanismos 
+        aseguran que los datos enviados sean precisos, completos y no contengan código malicioso, como scripts de ataque o inyecciones SQL. También ayudan a 
+        garantizar que la información sensible, como contraseñas y datos personales, se transmita de manera segura y no sea accesible a terceros no autorizados. 
+        Además, protegen a los formularios de ataques de bots o intentos de acceso no autorizado.
+    </p>
+
+    <!-- SECCIÓN SOBRE CUÁNDO SE USAN LOS MECANISMOS DE SEGURIDAD EN FORMULARIOS -->
+    <h2>Cuándo se usan</h2>
+    <p>
+        Los mecanismos de seguridad en formularios se deben utilizar siempre que se recojan datos de los usuarios en un sitio web, especialmente cuando estos 
+        datos son sensibles o privados, como información de contacto, credenciales de inicio de sesión o detalles de pago. Son esenciales en cualquier formulario en 
+        línea, ya sea en un proceso de registro, una compra en línea, una encuesta o un inicio de sesión. Estos mecanismos deben ser implementados de manera constante 
+        y actualizada para garantizar que los formularios sean seguros frente a las amenazas emergentes.
+    </p>
+
+    <!-- ENLACE PARA VOLVER AL MENÚ PRINCIPAL -->
+    <div class="regreso">
+        <a href="Index.html">Volver al menú principal</a>
+    </div>
+
+    <!-- SECCIÓN DE BIBLIOGRAFÍA -->
+    <div class="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>IBM Corporation. (Enero 31, 2024). <i>Mecanismos y conceptos de seguridad.</i> IBM. Disponible en: <a href="https://www.ibm.com/docs/es/ibm-mq/9.2?topic=overview-security-concepts-mechanisms" target="_blank">https://www.ibm.com/docs/es/ibm-mq/9.2?topic=overview-security-concepts-mechanisms</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- CAMBIO EL IDIOMA A ESPAÑOL -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validación de Formulario de Prototipo</title> <!-- TÍTULO CAMBIADO A ESPAÑOL -->
+  <script src="https://ajax.googleapis.com/ajax/libs/prototype/1.7.3.0/prototype.js"></script> <!-- CARGA LA LIBRERÍA PROTOTYPE -->
+   <style>
+        /* ESTILO PARA EL ENLACE DE REGRESO */
+        .regreso a {
+            display: block; /* HACER EL ENLACE BLOQUE */
+            width: fit-content; /* ANCHO AUTOMÁTICO PARA EL ENLACE */
+            margin: 30px auto; /* CENTRAR EL ENLACE CON MÁRGENES */
+            text-align: center; /* CENTRAR EL TEXTO EN EL ENLACE */
+            font-size: 18px; /* TAMAÑO DE LETRA DEL ENLACE */
+            color: #ffffff; /* TEXTO BLANCO */
+            background-color: #f4a2e2; /* FONDO ROSA CLARO */
+            padding: 10px 20px; /* RELLENO EN EL ENLACE */
+            text-decoration: none; /* QUITAR SUBRAYADO DEL ENLACE */
+            border-radius: 5px; /* RADIAR ESQUINAS DEL ENLACE */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DEL ENLACE DE REGRESO */
+        .regreso a:hover {
+            background-color: #f860d7; /* CAMBIAR EL FONDO A ROSA MÁS FUERTE AL HACER HOVER */
+        }
+
+        /* ESTILO PARA LA BIBLIOGRAFÍA */
+        .bibliografia {
+            max-width: 800px; /* ANCHO MÁXIMO DE LA BIBLIOGRAFÍA */
+            margin: 40px auto; /* CENTRAR LA BIBLIOGRAFÍA CON MÁRGENES */
+            font-size: 18px; /* TAMAÑO DE LETRA */
+            text-align: left; /* ALINEAR A LA IZQUIERDA */
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+        }
+
+        /* ESTILO PARA LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a {
+            color: #ff7ce3; /* COLOR ROSA SUAVE */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN LA BIBLIOGRAFÍA */
+        .bibliografia a:hover {
+            color: #f47cda; /* CAMBIAR EL COLOR A ROSA MÁS FUERTE AL HACER HOVER */
+            text-decoration: underline; /* SUBRAYAR LOS ENLACES AL HACER HOVER */
+        }
+  </style>
+</head>
+<body>
+
+  <form id="myForm"> <!-- FORMULARIO CON EL ID "myForm" -->
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required /> <!-- ES REQUERIDO / OBLIGATORIO -->
+    <br><br>
+    <input type="submit" value="Enviar" /> <!-- ENVIA Y VALIDA EL NOMBRE -->
+  </form>
+
+  <script>
+    // SE EJECUTA CUANDO EL FORMULARIO SE ENVÍA
+    document.getElementById('myForm').onsubmit = function() {
+      // VERIFICA SI EL CAMPO "name" ESTÁ VACÍO
+      if ($('name').value.strip().length == 0) {
+        alert('El nombre no puede estar vacío'); // MUESTRA UNA ALERTA SI ESTÁ VACÍO
+        return false; // IMPIDE EL ENVÍO DEL FORMULARIO
+      }
+      return true; // PERMITE EL ENVÍO DEL FORMULARIO SI EL CAMPO NO ESTÁ VACÍO
+    };
+  </script>
+      <!-- ENLACE PARA VOLVER AL MENÚ PRINCIPAL -->
+      <div class="regreso">
+        <a href="Index.html">Volver al menú principal</a>
+    </div>
+
+    <!-- SECCIÓN DE BIBLIOGRAFÍA -->
+    <div class="bibliografia">
+        <h2>Bibliografía</h2>
+        <p>Kaos. (2009, 23 noviembre). <i>Validar formularios: Jquery, Mootools, etc.</i> Noticias Diseño - Tutorial Photoshop. Disponible en: <a href="https://kaosconcept.net/validar-formularios-con-jquery/" target="_blank">https://kaosconcept.net/validar-formularios-con-jquery/</a></p>
+    </div>
+</body>
+</html>

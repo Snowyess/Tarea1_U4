@@ -1,0 +1,48 @@
+body 
+    {
+    text-align: center; /* Centra todo el contenido del documento */
+    font-family:'Times New Roman', Times, serif; /* Fuente estándar para un diseño limpio */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+#content
+    {
+        width: 80%; /* Ajusta el ancho del contenido */
+        max-width: 900px; /* Limita el tamaño máximo */
+        background-color: #ffffff; /* Fondo blanco */
+        padding: 20px; /* Espaciado interno */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        border-radius: 8px; /* Bordes redondeados */
+        text-align: center; /* Texto alineado a la izquierda */
+        overflow-y: auto;
+        max-height: 90vh;
+    }
+/* Contenedor para secciones principales */
+.experiencia, .educacion, .habilidades 
+    {
+    margin: 20px auto; /* Centra los divs y les da separación vertical */
+    width: 80%; /* Ajusta el ancho de los divs */
+    text-align: left; /* Permite que el texto dentro esté alineado a la izquierda */
+    }
+
+/* Estilo para listas */
+ul 
+    {
+    list-style-type: disc; /* Viñetas estándar */
+    padding-left: 20px; /* Espaciado a la izquierda de la lista */
+    text-align: left; /* Alinea las viñetas a la izquierda */
+    }
+
+/* Encabezados */
+h1, h2 {
+    color: #333; /* Color oscuro para mejor visibilidad */
+}
+
+/* Estilo para párrafos */
+p {
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 5px 0;
+}

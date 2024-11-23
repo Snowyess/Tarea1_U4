@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- SE DEFINE EL JUEGO DE CARACTERES UTF-8 Y LA VISTA RESPONSIVA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SE ESTABLECE EL TÍTULO DE LA PÁGINA -->
+    <title>Menú Principal</title>
+
+    <style>
+        /* SE DEFINEN LOS ESTILOS GENERALES PARA EL TEXTO EN TODA LA PÁGINA */
+        * {
+            color: #f47cda; /* COLOR PÚRPURA PARA EL TEXTO */
+        }
+
+        /* ESTILO PARA EL CUERPO DE LA PÁGINA */
+        body {
+            font-family: Arial, sans-serif; /* FUENTE SANS-SERIF PARA EL CUERPO */
+            margin: 20px; /* MÁRGENES EN EL CUERPO */
+            padding: 0; /* SIN RELLENO EN EL CUERPO */
+        }
+
+        /* ESTILO PARA EL ENCABEZADO PRINCIPAL (H1) */
+        h1 {
+            color: #ffffff; /* COLOR BLANCO PARA EL ENCABEZADO */
+        }
+
+        /* ESTILO PARA EL ENCABEZADO PRINCIPAL DE LA PÁGINA */
+        header {
+            background-color: #fabded; /* COLOR DE FONDO ROSA PÁLIDO */
+            color: white; /* TEXTO BLANCO */
+            padding: 20px; /* RELLENO EN EL ENCABEZADO */
+            text-align: center; /* CENTRADO DEL TEXTO */
+        }
+
+        /* ESTILO PARA EL MENÚ DE NAVEGACIÓN */
+        nav {
+            background-color: #ffe8f1; /* FONDO ROSA CLARO */
+            display: flex; /* USO DE FLEXBOX PARA LA DISTRIBUCIÓN */
+            justify-content: center; /* CENTRAR LOS ELEMENTOS EN EL MENÚ */
+            align-items: center; /* ALINEAR ELEMENTOS EN EL CENTRO */
+            padding: 10px 0; /* RELLENO EN EL MENÚ */
+            margin: 0; /* SIN MÁRGENES EN EL MENÚ */
+        }
+
+        /* ESTILO PARA LOS ENLACES DEL MENÚ DE NAVEGACIÓN */
+        nav a {
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+            color: #f47cda; /* COLOR PÚRPURA PARA LOS ENLACES */
+            font-weight: bold; /* NEGRITA EN LOS ENLACES */
+            padding: 10px 20px; /* RELLENO DE LOS ENLACES */
+            display: block; /* HACER LOS ENLACES BLOQUES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES DEL MENÚ */
+        nav a:hover {
+            color: #ff00f79a; /* CAMBIO DE COLOR AL PASAR EL RATÓN */
+        }
+
+        /* ESTILO PARA LOS ÍTEMS DEL MENÚ QUE TIENEN SUBMENÚS */
+        .menu-item {
+            position: relative; /* POSICIONAMIENTO RELATIVO PARA EL SUBMENÚ */
+            margin-right: 30px; /* ESPACIO A LA DERECHA DE CADA ITEM */
+        }
+
+        /* ESTILO PARA EL SUBMENÚ (INICIALMENTE OCULTO) */
+        .submenu {
+            display: none; /* OCULTAR EL SUBMENÚ POR DEFECTO */
+            list-style-type: none; /* QUITAR LOS PUNTOS DE LA LISTA */
+            padding: 0; /* ELIMINAR RELLENO DE LA LISTA */
+            position: absolute; /* POSICIONAMIENTO ABSOLUTO PARA EL SUBMENÚ */
+            top: 35px; /* ESPACIO DESDE LA PARTE SUPERIOR DEL ÍTEM */
+            left: 0; /* ALINEAR A LA IZQUIERDA DEL ÍTEM */
+            background-color: #f4f4f4; /* FONDO GRIS CLARO PARA EL SUBMENÚ */
+            border: 1px solid #ddd; /* BORDES GRIS CLARO */
+            border-radius: 5px; /* ESQUINAS REDONDEADAS */
+            min-width: 180px; /* ANCHO MÍNIMO DEL SUBMENÚ */
+        }
+
+        /* ESTILO PARA LOS ENLACES DEL SUBMENÚ */
+        .submenu a {
+            display: block; /* HACER LOS ENLACES BLOQUES */
+            padding: 8px 15px; /* RELLENO DE LOS ENLACES */
+            text-decoration: none; /* QUITAR SUBRAYADO DE LOS ENLACES */
+            color: #f47cda; /* COLOR PÚRPURA PARA LOS ENLACES */
+        }
+
+        /* ESTILO PARA EL ESTADO HOVER DE LOS ENLACES EN EL SUBMENÚ */
+        .submenu a:hover {
+            color: #f47cda; /* COLOR PÚRPURA EN EL ESTADO HOVER */
+            background-color: #fabded; /* FONDO ROSA CLARO EN EL ESTADO HOVER */
+        }
+
+        /* MOSTRAR EL SUBMENÚ AL PASAR EL RATÓN SOBRE EL ÍTEM */
+        nav .menu-item:hover .submenu {
+            display: block; /* MOSTRAR EL SUBMENÚ AL HACER HOVER SOBRE EL ÍTEM */
+        }
+    </style>
+</head>
+<body>
+    <!-- ENCABEZADO DE LA PÁGINA -->
+    <header>
+        <h1>Bienvenidos</h1>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#acerca-de-mi">Acerca de Mí</a> <!-- ENLACE A LA SECCIÓN DE ACERCA DE MÍ -->
+        <a href="#acerca-de-la-materia">Acerca de la Materia</a> <!-- ENLACE A LA SECCIÓN DE ACERCA DE LA MATERIA -->
+
+        <!-- ÍTEM DEL MENÚ CON UN SUBMENÚ -->
+        <div class="menu-item">
+            <a href="javascript:void(0)">Conceptos Básicos</a>
+            <div class="submenu">
+                <a href="Mecanismos.html">Mecanismos de seguridad en formularios</a> <!-- ENLACE AL MÓDULO DE MECANISMOS DE SEGURIDAD -->
+                <a href="Ajax.html">Introducción a AJAX</a> <!-- ENLACE AL MÓDULO DE AJAX -->
+                <a href="Jquery.html">JQuery</a> <!-- ENLACE AL MÓDULO DE JQUERY -->
+                <a href="Mootools.html">Mootools</a> <!-- ENLACE AL MÓDULO DE MOOTOOLS -->
+                <a href="Prototype.html">Prototype</a> <!-- ENLACE AL MÓDULO DE PROTOTYPE -->
+            </div>
+        </div>
+
+        <!-- ÍTEM DEL MENÚ CON UN SUBMENÚ -->
+        <div class="menu-item">
+            <a href="javascript:void(0)">Ejemplos Básicos</a>
+            <div class="submenu">
+                <a href="Mecanismos-ejemplo.html">Mecanismos de seguridad en formularios</a> <!-- ENLACE A EJEMPLOS DE MECANISMOS DE SEGURIDAD -->
+                <a href="Ajax-ejemplo.html">AJAX</a> <!-- ENLACE A EJEMPLOS DE AJAX -->
+                <a href="Jquery-ejemplo.html">JQuery</a> <!-- ENLACE A EJEMPLOS DE JQUERY -->
+                <a href="Mootools-ejemplo.html">Mootools</a> <!-- ENLACE A EJEMPLOS DE MOOTOOLS -->
+                <a href="Prototype-ejemplo.html">Prototype</a> <!-- ENLACE A EJEMPLOS DE PROTOTYPE -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL DE LA PÁGINA -->
+    <main>
+        <!-- SECCIÓN DE ACERCA DE MÍ -->
+        <section id="acerca-de-mi">
+            <h2>Acerca de Mí</h2>
+            <p><strong>Nombre Completo:</strong> Yessica Fuentes Chavez</p> <!-- NOMBRE DE LA PERSONA -->
+            <p><strong>No. de Control:</strong> 22490352</p> <!-- NÚMERO DE CONTROL -->
+            <p><strong>Correo Electrónico:</strong> <a href="mailto:a22490352@itmexicali.edu.mx">a22490352@itmexicali.edu.mx</a></p> <!-- CORREO ELECTRÓNICO -->
+            <p><strong>Currículum Vitae:</strong> <a href="Curriculum1.html" target="_blank"> Abrir</a></p> <!-- ENLACE AL CURRÍCULUM -->
+        </section>
+
+        <!-- SECCIÓN DE ACERCA DE LA MATERIA -->
+        <section id="acerca-de-la-materia"> 
+            <h2>Acerca de la Materia</h2>
+            <p><strong>Nombre del Profesor:</strong> Edder Iván Pimentel Félix</p> <!-- NOMBRE DEL PROFESOR -->
+            <p><strong>Nombre de la Materia:</strong> Programación Web</p> <!-- NOMBRE DE LA MATERIA -->
+            <p><strong>Unidad IV:</strong> Unidad 4: Programación del lado del servidor</p> <!-- UNIDAD DE LA MATERIA -->
+            <p><strong>Tarea:</strong> Tarea I - Conceptos y ejemplos basicos en HTML</p> <!-- DESCRIPCIÓN DE LA TAREA -->
+        </section>
+    </main>
+</body>
+</html>
